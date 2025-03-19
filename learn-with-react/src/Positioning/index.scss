@@ -1,0 +1,35 @@
+#root{
+    background-color: grey;
+}
+
+.child{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    //since #root is not positioned, it positions to the nearest positioned ancestor or body directly
+     position: absolute;
+     top:0px;
+     left: 0px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    background-color: green;
+    position: relative;
+    top:10px;
+    left: 10px;
+}
+
+.header{
+    //it is fixed in its position
+    //Not taking any space for its contents
+    //Aligns with the viewport
+    // No relevance to any ancestor even it is position (not like position: absolute behaviour)
+    position: fixed;
+}
+
+.sticky{
+    
+}
